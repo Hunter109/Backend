@@ -56,10 +56,15 @@ app.get("/utsav", (req, res) => {
 
 })
 
-app.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, "static", "404.html"));
-});
 
+
+// app.use((req, res) => {
+//     res.status(404).sendFile(path.join(__dirname, "static", "404.html"));
+// });
+
+app.get('/*splat', async (req, res) => {
+    res.sendFile(path.join(__dirname, "static", "404.html"));
+})
 
 app.listen(port, (req, res) => {
     console.log(`server is listenening http://localhost:${port}/`);
