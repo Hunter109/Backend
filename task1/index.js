@@ -9,7 +9,9 @@
 //         / contact → Send a JSON object like { email: "...", phone: "..." }
 
 
+
 const express = require('express');
+const path = require('path')
 const app = express();
 const port = 3000;
 
@@ -30,6 +32,17 @@ app.get('/contact', (req, res) => {
     }
 
     res.send(contactDetail)
+})
+
+
+// 📝 Task 2: Serving a File
+
+// Place an index.html file in a static folder.
+
+// Create a route /home that sends this file using res.sendFile().
+
+app.get('/home', (req, res) => {
+    res.sendFile(path.join(__dirname, "./static/index.html"))
 })
 
 app.listen(port, (req, res) => {
