@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Art Collection</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 
 <body>
@@ -16,7 +18,7 @@
         <nav>
             <a href="#">Home</a>
             <a href="#">Usage Guidelines</a>
-            <a href="#">Contact</a>
+            <a href="#footer">Contact</a>
             <a href="#">Art</a>
             <a href="#">About us</a>
             <a href="#">Sign/Signup</a>
@@ -35,46 +37,69 @@
     <!-- Filters -->
     <div class="filters">
         <select>
-            <option>Type</option>
+            <option disabled selected>Type</option>
+            <option value="painting">Painting</option>
+            <option value="sculpture">Sculpture</option>
+            <option value="textile">Textile</option>
         </select>
+
         <select>
-            <option>Periods</option>
+            <option disabled selected>Periods</option>
+            <option value="ancient">Ancient</option>
+            <option value="medieval">Medieval</option>
+            <option value="modern">Modern</option>
         </select>
+
         <select>
-            <option>Location</option>
+            <option disabled selected>Location</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="africa">Africa</option>
         </select>
+
         <select>
-            <option>Sort: Title (A-Z)</option>
+            <option disabled selected>Sort</option>
+            <option value="title-asc">Title (A–Z)</option>
+            <option value="title-desc">Title (Z–A)</option>
+            <option value="date-asc">Date (Oldest)</option>
+            <option value="date-desc">Date (Newest)</option>
         </select>
+
         <button class="apply">Apply Filter</button>
         <button class="clear">Clear All</button>
     </div>
+
 
     <hr>
     <!-- Grid -->
     <div class="grid">
         <div class="card">
-            <img src="#" alt="Art 1">
+            <img src="https://media.istockphoto.com/id/543465140/photo/oil-painting-of-eiffel-tower-france-art-work.jpg?s=612x612&w=0&k=20&c=jorVhJXuNMwX2lChQAch57r_gFWibTG-TQEtcHtrHKU="
+                alt="Art 1">
             <p>Art Piece 1</p>
         </div>
         <div class="card">
-            <img src="#" alt="Art 2">
+            <img src="https://m.media-amazon.com/images/I/616BpDKJqVL._UF1000,1000_QL80_.jpg" alt="Art 2">
             <p>Art Piece 2</p>
         </div>
         <div class="card">
-            <img src="#" alt="Art 3">
+            <img src="https://www.singulart.com/images/artworks/v2/cropped/3485/main/zoom/2236380_cb2c785fa74ff634918ec751207ba910.jpeg"
+                alt="Art 3">
             <p>Art Piece 3</p>
         </div>
         <div class="card">
-            <img src="#" alt="Art 4">
+            <img src="https://t3.ftcdn.net/jpg/09/68/62/72/360_F_968627268_zIAg6mqa97NXDrHbaQoa2ut34aD7A3BO.jpg"
+                alt="Art 4">
             <p>Art Piece 4</p>
         </div>
         <div class="card">
-            <img src="#" alt="Art 5">
+            <img src="https://t3.ftcdn.net/jpg/13/27/91/82/360_F_1327918251_p6Z39NuLwZzEC2sytFtH4d1DPo0lm5R0.jpg"
+                alt="Art 5">
             <p>Art Piece 5</p>
         </div>
         <div class="card">
-            <img src="#" alt="Art 6">
+            <img src="https://img.freepik.com/free-photo/close-up-photo-woman-mixing-oil-paints-palette_176420-2843.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Art 6">
             <p>Art Piece 6</p>
         </div>
     </div>
@@ -98,14 +123,55 @@
 
 
     <!-- Footer -->
-    <footer>
-        <div class="brand">Indegenious Art Atlas</div>
-        <div class="links">
-            <a href="#">About Us</a>
-            <a href="#">Usage Guideline</a>
-            <a href="#">Contact</a>
+
+
+    <footer id="footer">
+        <div class="footer-container">
+            <!-- Brand -->
+            <div class="brand">
+                <h2>Indegenious Art Atlas</h2>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Usage Guidelines</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:IndegeniousArtAtlas@gmail.com">IndegeniousArtAtlas@gmail.com</a></p>
+                <p>Phone: +61 239 456 763</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-media">
+                    <li><a href="https://facebook.com" target="_blank" class="facebook"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank" class="instagram"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar">
+            <p>&copy; 2025 Indegenious Art Atlas. All rights reserved.</p>
         </div>
     </footer>
+
+
+
 
 </body>
 

@@ -6,6 +6,11 @@
         sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background: #f9f9f9;
     color: #333;
@@ -163,19 +168,109 @@ hr {
     color: #fff;
 }
 
-/* Footer */
-footer {
-    background: #fff;
-    border-top: 1px solid #ddd;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 25px 60px;
-    margin-top: 20px;
+/* Footer  */
+#footer {
+    background: #111;
+    color: #eee;
+    padding: 50px 20px 20px;
+    font-family: "Poppins", sans-serif;
 }
 
-footer .links a {
-    display: block;
-    margin: 6px 0;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-container .brand h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-container h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f39c12;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-container ul li {
+    margin-bottom: 10px;
+}
+
+.footer-container ul li a {
     text-decoration: none;
-    color: #333;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+
+.footer-container ul li a:hover {
+    color: #f39c12;
+}
+
+.footer-content p,
+.footer-content a {
+    color: #bbb;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-content a:hover {
+    color: #f39c12;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-media li {
+    list-style: none;
+}
+
+.social-media a {
+    width: 40px;
+    height: 40px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-media a.facebook:hover {
+    background: #1877f2;
+    color: white;
+}
+
+.social-media a.instagram:hover {
+    background: #e1306c;
+    color: white;
+
+}
+
+.social-media a.twitter:hover {
+    background: #1da1f2;
+    color: white;
+
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #aaa;
 }
